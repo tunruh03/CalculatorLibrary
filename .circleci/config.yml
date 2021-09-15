@@ -23,7 +23,7 @@ jobs:
     # Step 2: create virtual env and install dependencies
     # executing command line programs or commands is done inside the run key
     - run:
-    	# name stores every step of the build
+        # name stores every step of the build
         name: install dependencies
         # the | symbol specifies that what follow is a literal set of commands,
         # one per line just like a bash script
