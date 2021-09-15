@@ -19,7 +19,7 @@ jobs:
     steps:
     #Step 1: obtain repo from github
     # check the source code out to the working directory for CI
-    - checkout:
+    - checkout
     # Step 2: create virtual env and install dependencies
     # executing command line programs or commands is done inside the run key
     - run:
@@ -38,4 +38,4 @@ jobs:
           . venv/bin/activate
           flake8 --exclude=venv* --statistics
           pytest -v --cov=calculator
-
+          
